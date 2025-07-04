@@ -1,0 +1,37 @@
+name: Java 17 · Maven · TestNG
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up Java 17 and cache Maven dependencies
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      # 3. Build & run tests
+      - name: Build with Maven
+        run: mvn -B clean test
+
+      # 4. (Optional) Upload Allure or Extent artifacts
+      - name: Archive Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: target/allure-results
+          retention-days: 7
