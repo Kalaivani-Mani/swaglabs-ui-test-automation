@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="SwagLabs Suite">
-  <test name="Login Tests">
+  <test name="Swag Tests">
     <classes>
       <class name="tests.LoginTest"/>
     </classes>
