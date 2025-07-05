@@ -91,7 +91,7 @@ public class BaseTest {
 
 	    return new ChromeDriver(options);
 	}
-
+	
 	 public WebElement waitForElementVisible(By locator, int timeInSec) {
 	        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeInSec));
 	        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
