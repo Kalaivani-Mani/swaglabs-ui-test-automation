@@ -44,14 +44,6 @@
       <version>5.1.1</version>
     </dependency>
 
-    <!-- Internal Dependency (optional, validate if needed) -->
-    <dependency>
-      <groupId>com.github</groupId>
-      <artifactId>saucedemo-ui-test-automation</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
-
   <build>
     <plugins>
       <!-- Maven Surefire Plugin with corrected suite file path -->
