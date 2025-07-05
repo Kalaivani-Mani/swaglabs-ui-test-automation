@@ -72,10 +72,18 @@ public class BaseTest {
 	}
 	public WebDriver initializeChromeDriver() {
 	    ChromeOptions options = new ChromeOptions();
+
 	    options.addArguments("--disable-infobars");
 	    options.addArguments("--disable-notifications");
-	    options.addArguments("--no-sandbox");
-	    options.addArguments("--disable-dev-shm-usage");
+	    options.addArguments("--no-sandbox");                   // Required in Linux CI
+	    options.addArguments("--disable-dev-shm-usage");        // Required in Linux CI
+
+	    // Run in headless mode for CI stability
+	    options.addArguments("--headless=new");  // or just "--headless"
+
+	    // Optional: set a unique user data dir if you want to isolate sessions (use UUID or temp dir)
+	    // String userDataDir = "/tmp/chrome-user-data-" + java.util.UUID.randomUUID();
+	    // options.addArguments("--user-data-dir=" + userDataDir);
 
 	    Map<String, Object> prefs = new HashMap<>();
 	    prefs.put("credentials_enable_service", false);
