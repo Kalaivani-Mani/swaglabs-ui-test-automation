@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T22:26:07 IST" name="Default suite" finished-at="2025-07-04T22:26:18 IST" duration-ms="11064">
+  <suite started-at="2025-07-05T17:04:58 IST" name="SwagLabs Suite" finished-at="2025-07-05T17:05:14 IST" duration-ms="15541">
     <groups>
     </groups>
-    <test started-at="2025-07-04T22:26:07 IST" name="Default test" finished-at="2025-07-04T22:26:18 IST" duration-ms="11064">
+    <test started-at="2025-07-05T17:04:58 IST" name="Swag Tests" finished-at="2025-07-05T17:05:14 IST" duration-ms="15541">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:07 IST" name="setupReport" finished-at="2025-07-04T22:26:07 IST" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:04:58 IST" name="setupReport" finished-at="2025-07-05T17:04:58 IST" duration-ms="432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:07 IST" name="setupDriver" finished-at="2025-07-04T22:26:09 IST" duration-ms="2030" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:04:58 IST" name="setupDriver" finished-at="2025-07-05T17:05:01 IST" duration-ms="2576" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:09 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-04T22:26:10 IST" duration-ms="1123" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:01 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-05T17:05:03 IST" duration-ms="1886" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,18 +43,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:10 IST" name="tearDownTest" finished-at="2025-07-04T22:26:10 IST" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:03 IST" name="tearDownTest" finished-at="2025-07-05T17:05:03 IST" duration-ms="354" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:10 IST" name="setupDriver" finished-at="2025-07-04T22:26:11 IST" duration-ms="800" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:03 IST" name="setupDriver" finished-at="2025-07-05T17:05:04 IST" duration-ms="1236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:11 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-04T22:26:12 IST" duration-ms="873" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:04 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-05T17:05:06 IST" duration-ms="1374" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,18 +86,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:12 IST" name="tearDownTest" finished-at="2025-07-04T22:26:12 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:06 IST" name="tearDownTest" finished-at="2025-07-05T17:05:06 IST" duration-ms="185" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:12 IST" name="setupDriver" finished-at="2025-07-04T22:26:13 IST" duration-ms="685" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:06 IST" name="setupDriver" finished-at="2025-07-05T17:05:07 IST" duration-ms="1160" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:13 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-04T22:26:14 IST" duration-ms="876" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:07 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-05T17:05:08 IST" duration-ms="1225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,18 +129,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:14 IST" name="tearDownTest" finished-at="2025-07-04T22:26:14 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:08 IST" name="tearDownTest" finished-at="2025-07-05T17:05:09 IST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:14 IST" name="setupDriver" finished-at="2025-07-04T22:26:15 IST" duration-ms="857" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:09 IST" name="setupDriver" finished-at="2025-07-05T17:05:10 IST" duration-ms="1109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,7 +151,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:15 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-04T22:26:16 IST" duration-ms="994" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:10 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-05T17:05:11 IST" duration-ms="1230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,18 +172,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:16 IST" name="tearDownTest" finished-at="2025-07-04T22:26:16 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:11 IST" name="tearDownTest" finished-at="2025-07-05T17:05:11 IST" duration-ms="191" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:16 IST" name="setupDriver" finished-at="2025-07-04T22:26:17 IST" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:11 IST" name="setupDriver" finished-at="2025-07-05T17:05:12 IST" duration-ms="1090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,7 +194,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:17 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-04T22:26:18 IST" duration-ms="1070" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:12 IST" name="loginTest" data-provider="loginCredentials" finished-at="2025-07-05T17:05:13 IST" duration-ms="1212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,22 +215,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:18 IST" name="tearDownTest" finished-at="2025-07-04T22:26:18 IST" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:13 IST" name="tearDownTest" finished-at="2025-07-05T17:05:14 IST" duration-ms="210" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@1f9e9475] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@6e2aa843] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:tests.LoginTest@1f9e9475]" started-at="2025-07-04T22:26:18 IST" name="generateReport" finished-at="2025-07-04T22:26:18 IST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:tests.LoginTest@6e2aa843]" started-at="2025-07-05T17:05:14 IST" name="generateReport" finished-at="2025-07-05T17:05:14 IST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
       </class> <!-- tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Swag Tests -->
+  </suite> <!-- SwagLabs Suite -->
 </testng-results>
