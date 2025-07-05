@@ -1,4 +1,4 @@
-name: SwagLab Automation CI
+  name: SwagLab Automation CI
 
 on:
   push:
@@ -34,18 +34,20 @@ jobs:
           sudo mv chromedriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver
 
-      - name: Install Allure CLI
+      - name: Install Allure CLI manually
         run: |
-          sudo apt-add-repository ppa:qameta/allure -y
-          sudo apt-get update
-          sudo apt-get install -y allure
+        wget https://github.com/allure-framework/allure2/releases/download/2.25.0/allure-2.25.0.tgz
+        sudo tar -zxvf allure-2.25.0.tgz -C /opt/
+        sudo ln -s /opt/allure-2.25.0/bin/allure /usr/bin/allure
+        allure --version
 
       - name: Run TestNG suite with Allure listener
         run: mvn clean test -DsuiteXmlFile=java-maven-testing.xml
 
       - name: Generate Allure report
         run: |
-          allure generate target/allure-results --clean -o target/allure-report
+        allure generate target/allure-results --clean -o target/allure-report
+
 
       - name: Upload Allure report
         if: always()
