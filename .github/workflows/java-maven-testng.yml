@@ -21,11 +21,11 @@ jobs:
           java-version: '17'
           cache: maven
 
-      - name: Download Chrome browser
+      - name: Install Google Chrome  
         uses: browser-actions/setup-chrome@v1
 
-      - name: Download ChromeDriver
-        uses: nanasess/setup-chromedriver@v1
+      - name: SetUp ChromeDriver
+        uses: actions/setup-chromedriver@v1
         with:
           chromedriver-version: 'latest'
           
