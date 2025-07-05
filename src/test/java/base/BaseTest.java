@@ -77,13 +77,11 @@ public class BaseTest {
 	    options.addArguments("--disable-notifications");
 	    options.addArguments("--no-sandbox");                   // Required in Linux CI
 	    options.addArguments("--disable-dev-shm-usage");        // Required in Linux CI
+	    options.addArguments("--headless=new");                  // Headless mode for CI
 
-	    // Run in headless mode for CI stability
-	    options.addArguments("--headless=new");  // or just "--headless"
-
-	    // Optional: set a unique user data dir if you want to isolate sessions (use UUID or temp dir)
-	    // String userDataDir = "/tmp/chrome-user-data-" + java.util.UUID.randomUUID();
-	    // options.addArguments("--user-data-dir=" + userDataDir);
+	    // Use a unique user data directory to avoid conflicts in parallel or repeated runs
+	    String userDataDir = "/tmp/chrome-user-data-" + java.util.UUID.randomUUID();
+	    options.addArguments("--user-data-dir=" + userDataDir);
 
 	    Map<String, Object> prefs = new HashMap<>();
 	    prefs.put("credentials_enable_service", false);
@@ -93,7 +91,7 @@ public class BaseTest {
 
 	    return new ChromeDriver(options);
 	}
-	
+
 	 public WebElement waitForElementVisible(By locator, int timeInSec) {
 	        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeInSec));
 	        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
