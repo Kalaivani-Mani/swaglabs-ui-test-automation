@@ -3,6 +3,7 @@
   <test name="Swag Tests">
     <classes>
       <class name="tests.LoginTest"/>
+      <class name="tests.InventoryTest"/>
     </classes>
   </test>
 </suite>
