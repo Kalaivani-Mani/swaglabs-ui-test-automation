@@ -71,16 +71,15 @@ public class InventoryPage {
 		return names;
 
 	}
-
 	// Add Method to Add First Item to Cart
-	public void addFirstItemToCart() {
-		List<WebElement> buttons = getDriver().findElements(addToCartButton);
+		public void addFirstItemToCart() {
+			List<WebElement> buttons = getDriver().findElements(addToCartButton);
 
-		if (!buttons.isEmpty()) {
-			buttons.get(0).click();
+			if (!buttons.isEmpty()) {
+				buttons.get(0).click();
+			}
+
 		}
-
-	}
 
 	// Add Method to Get Cart Badge Count
 	public int getCartBadgeCount() {
@@ -118,7 +117,7 @@ public class InventoryPage {
 		int RCount = 0;
 		List<WebElement> removeList = getDriver().findElements(removeCartItems);
 		for (WebElement webElement : removeList) {
-			WaitUtils.waitForClickability(getDriver(), removeCartItems, 10);
+			WaitUtils.waitForClickability(getDriver(), removeCartItems, 5);
 			webElement.click();
 			RCount++;
 
@@ -141,38 +140,33 @@ public class InventoryPage {
 
 	// Add a specific product to cart
 	public void addSpecificProductToCart(String specificProductName) {
-	    // Ensure inventory page is fully loaded
-	    WaitUtils.waitForVisibility(getDriver(), By.id("inventory_container"), 10);
+		List<WebElement> productCards = getDriver().findElements(By.className("inventory_item"));
+		boolean found = false;
 
-	    List<WebElement> productCards = getDriver().findElements(By.className("inventory_item"));
-	    boolean found = false;
+		for (WebElement card : productCards) {
+			String name = card.findElement(By.className("inventory_item_name")).getText().trim();
 
-	    // Normalize the expected name
-	    String expected = specificProductName.trim().replace("\u00A0", " ").toLowerCase();
+			if (name.equalsIgnoreCase(specificProductName)) {
+				WebElement addButton = card.findElement(By.xpath(".//button[contains(text(), 'Add to cart')]"));
+				String label = addButton.getText().trim();
 
-	    System.out.println("🔍 Looking for product: " + expected);
+				
+				 if (label.equalsIgnoreCase("Add to cart")) {
+		                WaitUtils.waitForClickability(getDriver(), addButton, 5).click();
+		                System.out.println("✅ Added to cart: " + name);
+		            } else {
+		                System.out.println("⚠️ Product already added or unexpected label: " + label);
+		            }
 
-	    for (WebElement card : productCards) {
-	        String actualName = card.findElement(By.className("inventory_item_name")).getText()
-	                .trim()
-	                .replace("\u00A0", " ")
-	                .toLowerCase();
+		            found = true;
+		            break;
+		        }
+		    }
 
-	        System.out.println("🛒 Found product: " + actualName);
-
-	        if (actualName.equals(expected)) {
-	            WebElement addButton = card.findElement(By.xpath(".//button[contains(text(), 'Add to cart')]"));
-	            WaitUtils.waitForClickability(getDriver(), addButton, 10).click();
-	            found = true;
-	            System.out.println("✅ Added to cart: " + actualName);
-	            break;
-	        }
-	    }
-
-	    if (!found) {
-	        throw new RuntimeException("❌ Product not found: " + specificProductName);
-	    }
-	}
+		    if (!found) {
+		        throw new RuntimeException("❌ Product not found: " + specificProductName);
+		    }
+		}
 
 
 	// Sort option

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SwagLabs Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Swag Tests(failed)">
+    <classes>
+      <class name="tests.InventoryTest">
+        <methods>
+          <include name="addSpecificProductToCart"/>
+          <include name="setupDriver"/>
+          <include name="removeFirstItemFromCart"/>
+          <include name="setupReport"/>
+          <include name="addAllTheProductsToCartFromInventoryPage"/>
+          <include name="removeAllTheProductsFromCart"/>
+          <include name="tearDownTest"/>
+          <include name="addFirstProductToCartFromInventoryPage"/>
+          <include name="generateReport"/>
+          <include name="cleanCart"/>
+        </methods>
+      </class> <!-- tests.InventoryTest -->
+    </classes>
+  </test> <!-- Swag Tests(failed) -->
+</suite> <!-- Failed suite [SwagLabs Suite] -->

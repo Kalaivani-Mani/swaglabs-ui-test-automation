@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Swag Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 05 17:04:58 IST 2025</td>
+<td>Started on:</td><td>Sat Jul 05 19:30:47 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15541 ms)</td>
+<tr><td>Total time:</td><td>98 seconds (98710 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,129 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.InventoryTest.addFirstProductToCartFromInventoryPage()'><b>addFirstProductToCartFromInventoryPage</b><br>Test class: tests.InventoryTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: shopping_cart_badge (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /tmp/chrome-user-data-e3cfb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58823/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f1e58dc6f186a28f7f57c3bf9da15b12
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisibility(WaitUtils.java:11)
+	at pages.InventoryPage.getCartBadgeCount(InventoryPage.java:88)
+	at tests.InventoryTest.addFirstProductToCartFromInventoryPage(InventoryTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace349757746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace349757746'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: shopping_cart_badge (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /tmp/chrome-user-data-e3cfb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58823/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f1e58dc6f186a28f7f57c3bf9da15b12
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisibility(WaitUtils.java:11)
+	at pages.InventoryPage.getCartBadgeCount(InventoryPage.java:88)
+	at tests.InventoryTest.addFirstProductToCartFromInventoryPage(InventoryTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.InventoryTest.addSpecificProductToCart()'><b>addSpecificProductToCart</b><br>Test class: tests.InventoryTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: shopping_cart_badge (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /tmp/chrome-user-data-b0a5a...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58558/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e133a09732dd6c322ee3f7b6aaf37d0f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisibility(WaitUtils.java:11)
+	at pages.InventoryPage.getCartBadgeCount(InventoryPage.java:88)
+	at tests.InventoryTest.addSpecificProductToCart(InventoryTest.java:168)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780566650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace780566650'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: shopping_cart_badge (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /tmp/chrome-user-data-b0a5a...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58558/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e133a09732dd6c322ee3f7b6aaf37d0f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisibility(WaitUtils.java:11)
+	at pages.InventoryPage.getCartBadgeCount(InventoryPage.java:88)
+	at tests.InventoryTest.addSpecificProductToCart(InventoryTest.java:168)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>16</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,30 +199,161 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: standard_user, secret_sauce, true</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTest@6e2aa843</td></tr>
-<tr>
-<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: , secret_sauce, false</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTest@6e2aa843</td></tr>
-<tr>
 <td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: invalid_user, secret_sauce, false</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTest@6e2aa843</td></tr>
+<td>tests.LoginTest@730d2164</td></tr>
+<tr>
+<td title='tests.InventoryTest.testInventorySort()'><b>testInventorySort</b><br>Test class: tests.InventoryTest<br>Parameters: Price (high to low), priceDesc</td>
+<td></td>
+<td>1</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: , secret_sauce, false</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@730d2164</td></tr>
+<tr>
+<td title='tests.InventoryTest.testInventorySort()'><b>testInventorySort</b><br>Test class: tests.InventoryTest<br>Parameters: Price (low to high), priceAsc</td>
+<td></td>
+<td>1</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.InventoryTest.getNumberOfProductsAvailableInInventoryPage()'><b>getNumberOfProductsAvailableInInventoryPage</b><br>Test class: tests.InventoryTest</td>
+<td></td>
+<td>1</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.InventoryTest.getListofAvailableProductNameFromInventoryPage()'><b>getListofAvailableProductNameFromInventoryPage</b><br>Test class: tests.InventoryTest</td>
+<td></td>
+<td>1</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.InventoryTest.testInventorySort()'><b>testInventorySort</b><br>Test class: tests.InventoryTest<br>Parameters: Name (A to Z), nameAsc</td>
+<td></td>
+<td>1</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
 <tr>
 <td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: standard_user, wrong_pass, false</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTest@6e2aa843</td></tr>
+<td>tests.LoginTest@730d2164</td></tr>
+<tr>
+<td title='tests.InventoryTest.testInventorySort()'><b>testInventorySort</b><br>Test class: tests.InventoryTest<br>Parameters: Name (Z to A), nameDesc</td>
+<td></td>
+<td>1</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: standard_user, secret_sauce, true</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@730d2164</td></tr>
 <tr>
 <td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest<br>Parameters: standard_user, , false</td>
 <td></td>
-<td>1</td>
-<td>tests.LoginTest@6e2aa843</td></tr>
+<td>0</td>
+<td>tests.LoginTest@730d2164</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.InventoryTest.removeAllTheProductsFromCart()'><b>removeAllTheProductsFromCart</b><br>Test class: tests.InventoryTest</td>
+<td><div><pre>java.lang.Throwable: Method tests.InventoryTest.removeAllTheProductsFromCart() on instance tests.InventoryTest@60db1c0e depends on not successfully finished methods 
+[tests.InventoryTest.removeFirstItemFromCart() on instance tests.InventoryTest@60db1c0e
+tests.InventoryTest.addAllTheProductsToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace321358401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace321358401'><pre>java.lang.Throwable: Method tests.InventoryTest.removeAllTheProductsFromCart() on instance tests.InventoryTest@60db1c0e depends on not successfully finished methods 
+[tests.InventoryTest.removeFirstItemFromCart() on instance tests.InventoryTest@60db1c0e
+tests.InventoryTest.addAllTheProductsToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.InventoryTest.removeFirstItemFromCart()'><b>removeFirstItemFromCart</b><br>Test class: tests.InventoryTest</td>
+<td><div><pre>java.lang.Throwable: Method tests.InventoryTest.removeFirstItemFromCart() on instance tests.InventoryTest@60db1c0e depends on not successfully finished methods 
+[tests.InventoryTest.addFirstProductToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472904643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472904643'><pre>java.lang.Throwable: Method tests.InventoryTest.removeFirstItemFromCart() on instance tests.InventoryTest@60db1c0e depends on not successfully finished methods 
+[tests.InventoryTest.addFirstProductToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
+<tr>
+<td title='tests.InventoryTest.addAllTheProductsToCartFromInventoryPage()'><b>addAllTheProductsToCartFromInventoryPage</b><br>Test class: tests.InventoryTest</td>
+<td><div><pre>java.lang.Throwable: Method tests.InventoryTest.addAllTheProductsToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e depends on not successfully finished methods 
+[tests.InventoryTest.addFirstProductToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1874812338", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1874812338'><pre>java.lang.Throwable: Method tests.InventoryTest.addAllTheProductsToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e depends on not successfully finished methods 
+[tests.InventoryTest.addFirstProductToCartFromInventoryPage() on instance tests.InventoryTest@60db1c0e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.InventoryTest@60db1c0e</td></tr>
 </table><p>
 </body>
 </html>
