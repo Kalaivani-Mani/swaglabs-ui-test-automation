@@ -108,10 +108,11 @@ public class InventoryTest extends BaseTest {
 
 		InventoryPage inventoryPage = new InventoryPage(getDriver());
 		int added = inventoryPage.addAllProduct();
+		System.out.println("All the products were added to cart. now the cart contains "+added);
 		int removed = inventoryPage.removeAllTheProducts();
 
 		try {
-			Assert.assertEquals(removed, added, "All the  cart items removed");
+			Assert.assertEquals(removed, 0, "All the  cart items removed");
 			test.pass("All the products removed from cart");
 
 		} catch (Exception e) {

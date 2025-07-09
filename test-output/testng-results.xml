@@ -2,174 +2,269 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-08T21:23:39 IST" name="Default suite" finished-at="2025-07-08T21:23:52 IST" duration-ms="13180">
+  <suite started-at="2025-07-09T22:57:34 IST" name="Default suite" finished-at="2025-07-09T22:57:55 IST" duration-ms="21103">
     <groups>
-      <group name="navigation">
-        <method signature="CartTest.continueShopping_navigatesToInventory()[pri:0, instance:tests.CartTest@f58853c]" name="continueShopping_navigatesToInventory" class="tests.CartTest"/>
-      </group> <!-- navigation -->
-      <group name="integrity">
-        <method signature="CartTest.addMultipleItems_displaysAllItems()[pri:0, instance:tests.CartTest@f58853c]" name="addMultipleItems_displaysAllItems" class="tests.CartTest"/>
-      </group> <!-- integrity -->
-      <group name="Regression">
-        <method signature="CartTest.addMultipleItems_displaysAllItems()[pri:0, instance:tests.CartTest@f58853c]" name="addMultipleItems_displaysAllItems" class="tests.CartTest"/>
-        <method signature="CartTest.continueShopping_navigatesToInventory()[pri:0, instance:tests.CartTest@f58853c]" name="continueShopping_navigatesToInventory" class="tests.CartTest"/>
-        <method signature="CartTest.removeItem_updatesRowCount()[pri:0, instance:tests.CartTest@f58853c]" name="removeItem_updatesRowCount" class="tests.CartTest"/>
-        <method signature="CartTest.verifyPriceCalculation_cartPage()[pri:0, instance:tests.CartTest@f58853c]" name="verifyPriceCalculation_cartPage" class="tests.CartTest"/>
-      </group> <!-- Regression -->
-      <group name="pricing">
-        <method signature="CartTest.verifyPriceCalculation_cartPage()[pri:0, instance:tests.CartTest@f58853c]" name="verifyPriceCalculation_cartPage" class="tests.CartTest"/>
-      </group> <!-- pricing -->
-      <group name="remove-flow">
-        <method signature="CartTest.removeItem_updatesRowCount()[pri:0, instance:tests.CartTest@f58853c]" name="removeItem_updatesRowCount" class="tests.CartTest"/>
-      </group> <!-- remove-flow -->
-      <group name="cart">
-        <method signature="CartTest.addMultipleItems_displaysAllItems()[pri:0, instance:tests.CartTest@f58853c]" name="addMultipleItems_displaysAllItems" class="tests.CartTest"/>
-        <method signature="CartTest.continueShopping_navigatesToInventory()[pri:0, instance:tests.CartTest@f58853c]" name="continueShopping_navigatesToInventory" class="tests.CartTest"/>
-        <method signature="CartTest.removeItem_updatesRowCount()[pri:0, instance:tests.CartTest@f58853c]" name="removeItem_updatesRowCount" class="tests.CartTest"/>
-        <method signature="CartTest.verifyPriceCalculation_cartPage()[pri:0, instance:tests.CartTest@f58853c]" name="verifyPriceCalculation_cartPage" class="tests.CartTest"/>
-      </group> <!-- cart -->
+      <group name="Validation">
+        <method signature="CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" name="checkoutInformationPage" class="tests.CheckoutTest"/>
+      </group> <!-- Validation -->
+      <group name="Checkout">
+        <method signature="CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" name="checkoutInformationPage" class="tests.CheckoutTest"/>
+      </group> <!-- Checkout -->
+      <group name="DDT">
+        <method signature="CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" name="checkoutInformationPage" class="tests.CheckoutTest"/>
+      </group> <!-- DDT -->
     </groups>
-    <test started-at="2025-07-08T21:23:39 IST" name="Default test" finished-at="2025-07-08T21:23:52 IST" duration-ms="13180">
-      <class name="tests.CartTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:38 IST" name="setupReport" finished-at="2025-07-08T21:23:39 IST" duration-ms="539" status="PASS">
+    <test started-at="2025-07-09T22:57:34 IST" name="Default test" finished-at="2025-07-09T22:57:55 IST" duration-ms="21103">
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:34 IST" name="setupReport" finished-at="2025-07-09T22:57:34 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:39 IST" name="setupDriver" finished-at="2025-07-08T21:23:42 IST" duration-ms="2767" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:34 IST" name="setupDriver" finished-at="2025-07-09T22:57:36 IST" duration-ms="1621" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.CartTest.addMultipleItems_displaysAllItems()]]>
+                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="addMultipleItems_displaysAllItems()[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:42 IST" name="addMultipleItems_displaysAllItems" finished-at="2025-07-08T21:23:43 IST" duration-ms="1566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addMultipleItems_displaysAllItems -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:43 IST" name="tearDownTest" finished-at="2025-07-08T21:23:44 IST" duration-ms="257" status="PASS">
+        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:36 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:43 IST" duration-ms="6671" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addMultipleItems_displaysAllItems status=SUCCESS method=CartTest.addMultipleItems_displaysAllItems()[pri:0, instance:tests.CartTest@f58853c] output={null}]]]>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutInformationPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:43 IST" name="tearDownTest" finished-at="2025-07-09T22:57:43 IST" duration-ms="527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:44 IST" name="setupDriver" finished-at="2025-07-08T21:23:44 IST" duration-ms="734" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:43 IST" name="setupDriver" finished-at="2025-07-09T22:57:45 IST" duration-ms="1268" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.CartTest.continueShopping_navigatesToInventory()]]>
+                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="continueShopping_navigatesToInventory()[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:44 IST" name="continueShopping_navigatesToInventory" finished-at="2025-07-08T21:23:45 IST" duration-ms="952" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- continueShopping_navigatesToInventory -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:45 IST" name="tearDownTest" finished-at="2025-07-08T21:23:46 IST" duration-ms="194" status="PASS">
+        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:45 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:47 IST" duration-ms="2383" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=continueShopping_navigatesToInventory status=SUCCESS method=CartTest.continueShopping_navigatesToInventory()[pri:0, instance:tests.CartTest@f58853c] output={null}]]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutInformationPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:47 IST" name="tearDownTest" finished-at="2025-07-09T22:57:47 IST" duration-ms="499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:46 IST" name="setupDriver" finished-at="2025-07-08T21:23:46 IST" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:47 IST" name="setupDriver" finished-at="2025-07-09T22:57:49 IST" duration-ms="1060" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.CartTest.removeItem_updatesRowCount()]]>
+                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="removeItem_updatesRowCount()[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:46 IST" name="removeItem_updatesRowCount" finished-at="2025-07-08T21:23:48 IST" duration-ms="1151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeItem_updatesRowCount -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:48 IST" name="tearDownTest" finished-at="2025-07-08T21:23:48 IST" duration-ms="186" status="PASS">
+        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:49 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:50 IST" duration-ms="1361" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=removeItem_updatesRowCount status=SUCCESS method=CartTest.removeItem_updatesRowCount()[pri:0, instance:tests.CartTest@f58853c] output={null}]]]>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutInformationPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:50 IST" name="tearDownTest" finished-at="2025-07-09T22:57:50 IST" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:48 IST" name="setupDriver" finished-at="2025-07-08T21:23:49 IST" duration-ms="776" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:50 IST" name="setupDriver" finished-at="2025-07-09T22:57:51 IST" duration-ms="765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.CartTest.verifyPriceCalculation_cartPage()]]>
+                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="verifyPriceCalculation_cartPage()[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:49 IST" name="verifyPriceCalculation_cartPage" finished-at="2025-07-08T21:23:50 IST" duration-ms="1224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPriceCalculation_cartPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:50 IST" name="tearDownTest" finished-at="2025-07-08T21:23:50 IST" duration-ms="225" status="PASS">
+        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:51 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:52 IST" duration-ms="1368" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPriceCalculation_cartPage status=SUCCESS method=CartTest.verifyPriceCalculation_cartPage()[pri:0, instance:tests.CartTest@f58853c] output={null}]]]>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutInformationPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:52 IST" name="tearDownTest" finished-at="2025-07-09T22:57:53 IST" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:50 IST" name="setupDriver" finished-at="2025-07-08T21:23:51 IST" duration-ms="837" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:53 IST" name="setupDriver" finished-at="2025-07-09T22:57:53 IST" duration-ms="776" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.CartTest.sanityTest_CartPage()]]>
+                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="sanityTest_CartPage()[pri:1, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:51 IST" name="sanityTest_CartPage" finished-at="2025-07-08T21:23:52 IST" duration-ms="950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sanityTest_CartPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:52 IST" name="tearDownTest" finished-at="2025-07-08T21:23:52 IST" duration-ms="279" status="PASS">
+        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:53 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:55 IST" duration-ms="1638" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sanityTest_CartPage status=SUCCESS method=CartTest.sanityTest_CartPage()[pri:1, instance:tests.CartTest@f58853c] output={null}]]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutInformationPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:55 IST" name="tearDownTest" finished-at="2025-07-09T22:57:55 IST" duration-ms="346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:tests.CartTest@f58853c]" started-at="2025-07-08T21:23:52 IST" name="generateReport" finished-at="2025-07-08T21:23:52 IST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:55 IST" name="generateReport" finished-at="2025-07-09T22:57:56 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- tests.CartTest -->
+      </class> <!-- tests.CheckoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

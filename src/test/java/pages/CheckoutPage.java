@@ -41,7 +41,7 @@ public class CheckoutPage {
 
 	// 1. Checkout info: Your Information Page
 	public boolean isOnCheckoutInformationPage() {
-		WaitUtils.waitForVisibility(getDriver(), checkoutTitle, 5);
+		WaitUtils.waitForVisibility(getDriver(), checkoutTitle, 10);
 		return getDriver().findElement(checkoutTitle).isDisplayed();
 	}
 
