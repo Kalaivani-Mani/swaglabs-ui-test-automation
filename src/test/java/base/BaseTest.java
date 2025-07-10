@@ -77,7 +77,7 @@ public class BaseTest {
 	    options.addArguments("--disable-notifications");
 	    options.addArguments("--no-sandbox");                   // Required in Linux CI
 	    options.addArguments("--disable-dev-shm-usage");        // Required in Linux CI
-	    options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
+	    //options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
 	    // Use a unique user data directory to avoid conflicts in parallel or repeated runs
 	    String userDataDir = "/tmp/chrome-user-data-" + java.util.UUID.randomUUID();
 	    options.addArguments("--user-data-dir=" + userDataDir);

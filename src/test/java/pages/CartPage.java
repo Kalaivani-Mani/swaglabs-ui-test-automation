@@ -52,6 +52,10 @@ public class CartPage {
 		WaitUtils.waitForClickability(getDriver(), cartButton, 10);
 		getDriver().findElement(cartButton).click();
 	}
+	
+	public boolean isCartLoaded() {
+		return getDriver().getCurrentUrl().contains("cart.html") && getDriver().findElement(By.cssSelector(".cart_label")).isDisplayed();
+	}
 
 	// 2. Get cart page title
 	public boolean getCartTitle() {
