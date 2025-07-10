@@ -28,6 +28,8 @@ public class CheckoutPage {
 	private By subtotalLabel = By.className("summary_subtotal_label");
 	private By taxLabel = By.className("summary_tax_label");
 	private By totalLabel = By.className("summary_total_label");
+	private By completePage = By.xpath("//span[text() = 'Checkout: Complete!']");
+	private By backHome = By.xpath("//button[text() = 'Back Home']");
 
 	public WebDriver getDriver() {
 		return tLocal.get();
@@ -102,5 +104,18 @@ public class CheckoutPage {
 	public boolean isErrorMessageVisible() {
 		return getDriver().findElements(errorMessage).size()>0;
 	}
+
+	//11 Checkout complete page 
+	public boolean isCompleted() {
+		WaitUtils.waitForVisibility(getDriver(), completePage, 10);
+		return getDriver().findElement(completePage).isDisplayed();
+		
+	}
+	
+	public void backToHome() {
+		WaitUtils.waitForClickability(getDriver(), backHome, 5);
+		getDriver().findElement(backHome).click();
+	}
+
 
 }
