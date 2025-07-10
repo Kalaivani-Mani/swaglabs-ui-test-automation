@@ -1,266 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T22:57:34 IST" name="Default suite" finished-at="2025-07-09T22:57:55 IST" duration-ms="21103">
+  <suite started-at="2025-07-10T14:56:04 IST" name="Default suite" finished-at="2025-07-10T14:56:13 IST" duration-ms="8786">
     <groups>
-      <group name="Validation">
-        <method signature="CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" name="checkoutInformationPage" class="tests.CheckoutTest"/>
-      </group> <!-- Validation -->
-      <group name="Checkout">
-        <method signature="CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" name="checkoutInformationPage" class="tests.CheckoutTest"/>
-      </group> <!-- Checkout -->
-      <group name="DDT">
-        <method signature="CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" name="checkoutInformationPage" class="tests.CheckoutTest"/>
-      </group> <!-- DDT -->
     </groups>
-    <test started-at="2025-07-09T22:57:34 IST" name="Default test" finished-at="2025-07-09T22:57:55 IST" duration-ms="21103">
+    <test started-at="2025-07-10T14:56:04 IST" name="Default test" finished-at="2025-07-10T14:56:13 IST" duration-ms="8786">
       <class name="tests.CheckoutTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:34 IST" name="setupReport" finished-at="2025-07-09T22:57:34 IST" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CheckoutTest@7098b907]" started-at="2025-07-10T14:56:04 IST" name="setupReport" finished-at="2025-07-10T14:56:04 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:34 IST" name="setupDriver" finished-at="2025-07-09T22:57:36 IST" duration-ms="1621" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@7098b907]" started-at="2025-07-10T14:56:04 IST" name="setupDriver" finished-at="2025-07-10T14:56:09 IST" duration-ms="4727" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
+                <![CDATA[public void tests.CheckoutTest.validateCheckoutCompletePage()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:36 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:43 IST" duration-ms="6671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validateCheckoutCompletePage()[pri:0, instance:tests.CheckoutTest@7098b907]" started-at="2025-07-10T14:56:09 IST" name="validateCheckoutCompletePage" finished-at="2025-07-10T14:56:13 IST" duration-ms="3376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkoutInformationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:43 IST" name="tearDownTest" finished-at="2025-07-09T22:57:43 IST" duration-ms="527" status="PASS">
+        </test-method> <!-- validateCheckoutCompletePage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@7098b907]" started-at="2025-07-10T14:56:13 IST" name="tearDownTest" finished-at="2025-07-10T14:56:13 IST" duration-ms="465" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
+                <![CDATA[[TestResult name=validateCheckoutCompletePage status=SUCCESS method=CheckoutTest.validateCheckoutCompletePage()[pri:0, instance:tests.CheckoutTest@7098b907] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:43 IST" name="setupDriver" finished-at="2025-07-09T22:57:45 IST" duration-ms="1268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:45 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:47 IST" duration-ms="2383" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutInformationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:47 IST" name="tearDownTest" finished-at="2025-07-09T22:57:47 IST" duration-ms="499" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:47 IST" name="setupDriver" finished-at="2025-07-09T22:57:49 IST" duration-ms="1060" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:49 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:50 IST" duration-ms="1361" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutInformationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:50 IST" name="tearDownTest" finished-at="2025-07-09T22:57:50 IST" duration-ms="259" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:50 IST" name="setupDriver" finished-at="2025-07-09T22:57:51 IST" duration-ms="765" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:51 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:52 IST" duration-ms="1368" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutInformationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:52 IST" name="tearDownTest" finished-at="2025-07-09T22:57:53 IST" duration-ms="260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupDriver(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:53 IST" name="setupDriver" finished-at="2025-07-09T22:57:53 IST" duration-ms="776" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method signature="checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:53 IST" name="checkoutInformationPage" data-provider="checkoutInfoData" finished-at="2025-07-09T22:57:55 IST" duration-ms="1638" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutInformationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:55 IST" name="tearDownTest" finished-at="2025-07-09T22:57:55 IST" duration-ms="346" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkoutInformationPage status=SUCCESS method=CheckoutTest.checkoutInformationPage(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutTest@15d49048] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:tests.CheckoutTest@15d49048]" started-at="2025-07-09T22:57:55 IST" name="generateReport" finished-at="2025-07-09T22:57:56 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:tests.CheckoutTest@7098b907]" started-at="2025-07-10T14:56:13 IST" name="generateReport" finished-at="2025-07-10T14:56:14 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

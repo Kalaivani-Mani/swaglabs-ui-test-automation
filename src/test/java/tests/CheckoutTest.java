@@ -140,5 +140,45 @@ public class CheckoutTest extends BaseTest {
 		test.pass("✅ DDT: Products [" + String.join(", ", productNames) + "] → Checkout complete with subtotal: $"
 				+ expectedSubtotal);
 	}
+	@Description("Complete checkout page validation")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test
+	public void validateCheckoutCompletePage() {
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(ConfigReader.getProperty("baseUrl"));
+		new LoginPage(getDriver()).login("standard_user", "secret_sauce");
 
+		// Add product
+		InventoryPage inventoryPage = new InventoryPage(getDriver());
+		inventoryPage.addSpecificProductToCart("Sauce Labs Bolt T-Shirt");
+
+		// Navigate to cart
+		CartPage cartPage = new CartPage(getDriver());
+		cartPage.openCart();
+		Assert.assertTrue(getDriver().getCurrentUrl().contains("cart.html"), "Cart page did not load");
+
+		
+		// Proceed to checkout info
+		cartPage.clickCheckoutButton();
+		Assert.assertTrue(getDriver().getCurrentUrl().contains("checkout-step-one.html"),
+				"Did not reach Checkout Info page");
+
+		CheckoutPage checkout = new CheckoutPage(getDriver());
+		checkout.fillCheckoutForm("Kalai", "Vani", "111-222");
+		checkout.clickContinue();
+
+		// Now on Overview page
+		Assert.assertTrue(checkout.isOnOverviewPage(), "Not on Checkout Overview page");
+
+		checkout.clickFinish();
+		Assert.assertTrue(checkout.isCompleted(), "Checkout complete page did not open");
+		
+		checkout.backToHome();
+		Assert.assertTrue(inventoryPage.isInventoryVisible(), "Back to home functionality failed");
+
+		test.pass("Checkout completed");
+	}
 }
+	
+
+	
