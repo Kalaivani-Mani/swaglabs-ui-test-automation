@@ -1,1 +1,16 @@
-/target/
+# Ignore build artifacts
+target/
+test-output/
+
+# Ignore dynamic test results
+allure-results/
+reports/screenshots/
+reports/extent-report.html
+
+# Ignore IDE-specific files
+.classpath
+.project
+.vscode/
+
+# Ignore Maven wrapper files (if applicable)
+.mvn/
